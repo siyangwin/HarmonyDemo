@@ -3,6 +3,7 @@
     "pages/Index",
     "pages/StylesPage",
     "pages/SetStyleDemo",
-    "pages/ListDemo"
+    "pages/ListDemo",
+    "pages/PreferencesDemo"
   ]
 }
