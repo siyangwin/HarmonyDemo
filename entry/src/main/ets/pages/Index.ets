@@ -15,9 +15,18 @@ struct Index {
         router.pushUrl({ url: "pages/SetStyleDemo" })
       })
 
-      Button("ListDemo").onClick(() => {
+      Button("ListDemo列表布局").onClick(() => {
         router.pushUrl({ url: "pages/ListDemo" })
       })
+
+      Button("缓存写入-封装").onClick(() => {
+        router.pushUrl({ url: "pages/PreferencesDemo" })
+      })
+
+      Button("缓存写入-不封装").onClick(() => {
+        router.pushUrl({ url: "pages/Preferences2Demo" })
+      })
+
     }
     .height('100%')
     .width('100%')

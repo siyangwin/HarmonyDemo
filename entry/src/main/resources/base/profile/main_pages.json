@@ -4,6 +4,7 @@
     "pages/StylesPage",
     "pages/SetStyleDemo",
     "pages/ListDemo",
-    "pages/PreferencesDemo"
+    "pages/PreferencesDemo",
+    "pages/Preferences2Demo"
   ]
 }
