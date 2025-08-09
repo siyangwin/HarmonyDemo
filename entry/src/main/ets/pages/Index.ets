@@ -27,6 +27,14 @@ struct Index {
         router.pushUrl({ url: "pages/Preferences2Demo" })
       })
 
+      Button("Lazy-加载List").onClick(() => {
+        router.pushUrl({ url: "pages/LazyForEachDemo" })
+      })
+
+
+      Button("ToDoList").onClick(() => {
+        router.pushUrl({ url: "pages/TodoListDemo" })
+      })
     }
     .height('100%')
     .width('100%')

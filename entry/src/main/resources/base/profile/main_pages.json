@@ -5,6 +5,8 @@
     "pages/SetStyleDemo",
     "pages/ListDemo",
     "pages/PreferencesDemo",
-    "pages/Preferences2Demo"
+    "pages/Preferences2Demo",
+    "pages/LazyForEachDemo",
+    "pages/TodoListDemo"
   ]
 }
