@@ -86,6 +86,14 @@ struct Index {
           router.pushUrl({ url: "pages/SwiperDemo" })
         }).ButtonStyle()
 
+        Button("二维码").onClick(() => {
+          router.pushUrl({ url: "pages/QrCodeDemo" })
+        }).ButtonStyle()
+
+        Button("WebView").onClick(() => {
+          router.pushUrl({ url: "pages/WebViewDemo" })
+        }).ButtonStyle()
+        
       }
     }
     .height('100%')

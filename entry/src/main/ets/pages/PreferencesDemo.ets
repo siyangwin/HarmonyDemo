@@ -16,8 +16,9 @@ struct PreferencesDemo {
   //打开页面就去缓存获取数据
   onPageShow(): void {
     const cache = this.store.get({ key: "textNew" })
+
     if (cache != null) {
-      this.TextValue = this.store.get({ key: "textNew" }).toString();
+      this.TextValue = cache.toString();
     }
   }
 

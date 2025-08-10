@@ -18,6 +18,8 @@
     "pages/Login",
     "pages/SideBarContainerDemo",
     "pages/TabsDemo",
-    "pages/SwiperDemo"
+    "pages/SwiperDemo",
+    "pages/QrCodeDemo",
+    "pages/WebViewDemo"
   ]
 }
