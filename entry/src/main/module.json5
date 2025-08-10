@@ -35,6 +35,7 @@
       }
     ],
     //添加网络请求权限
+    //配置网络请求权限
     "requestPermissions": [
       {
         "name": "ohos.permission.INTERNET"

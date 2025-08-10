@@ -47,7 +47,7 @@ struct Index {
         }).ButtonStyle()
 
         Button("动画").onClick(() => {
-          router.pushUrl({ url: "pages/AnimstionDemo" })
+          router.pushUrl({ url: "pages/AnimationDemo" })
         }).ButtonStyle()
 
         Button("TrackDemo").onClick(() => {
@@ -58,8 +58,12 @@ struct Index {
           router.pushUrl({ url: "pages/ProgressDemo" })
         }).ButtonStyle()
 
-        Button("Http请求").onClick(() => {
+        Button("Http请求模拟").onClick(() => {
           router.pushUrl({ url: "pages/HttpRequestDemo" })
+        }).ButtonStyle()
+
+        Button("Http请求展示List").onClick(() => {
+          router.pushUrl({ url: "pages/HttpRequestListDemo" })
         }).ButtonStyle()
       }
     }

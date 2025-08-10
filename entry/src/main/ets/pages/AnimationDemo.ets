@@ -1,6 +1,6 @@
 @Entry
 @Component
-struct AnimstionDemo {
+struct AnimationDemo {
   @State positionX: number = 0;
   @State positionY: number = 0;
 

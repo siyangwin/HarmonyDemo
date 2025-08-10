@@ -8,9 +8,10 @@
     "pages/Preferences2Demo",
     "pages/LazyForEachDemo",
     "pages/TodoListDemo",
-    "pages/AnimstionDemo",
+    "pages/AnimationDemo",
     "pages/TrackDemo",
     "pages/ProgressDemo",
-    "pages/HttpRequestDemo"
+    "pages/HttpRequestDemo",
+    "pages/HttpRequestListDemo"
   ]
 }
