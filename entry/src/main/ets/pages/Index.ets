@@ -81,6 +81,11 @@ struct Index {
         Button("Tabs导航栏").onClick(() => {
           router.pushUrl({ url: "pages/TabsDemo" })
         }).ButtonStyle()
+
+        Button("Swiper滚动图片").onClick(() => {
+          router.pushUrl({ url: "pages/SwiperDemo" })
+        }).ButtonStyle()
+
       }
     }
     .height('100%')

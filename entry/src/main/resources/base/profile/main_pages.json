@@ -17,6 +17,7 @@
     "pages/Region",
     "pages/Login",
     "pages/SideBarContainerDemo",
-    "pages/TabsDemo"
+    "pages/TabsDemo",
+    "pages/SwiperDemo"
   ]
 }
