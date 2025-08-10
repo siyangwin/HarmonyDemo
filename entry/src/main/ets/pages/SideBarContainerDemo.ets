@@ -1,19 +1,30 @@
 @Entry
 @Component
 struct SideBarContainerDemo {
+  @State SelectItem: number = 0
+
   build() {
     //SideBarContainer(SideBarContainerType.Embed)  //侧边栏推出内容页面
     //侧边栏覆盖内容页面
     SideBarContainer(SideBarContainerType.Embed) {
       //第一个组件为侧边栏内容
       Column() {
-        Text("侧边栏")
+        ForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], (Item: number) => {
+          Row() {
+            Image($r("app.media.startIcon")).width(30).height(30)
+            Text(`index${Item}`).margin({ left: 20 })
+          }
+          .margin({ top: 2 })
+          .height(50)
+          .borderWidth(1)
           .width("100%")
-          .height("100%")
-          .fontSize(30)
-          .textAlign(TextAlign.Center)
-        //Text("购物车")
-      }
+          .justifyContent(FlexAlign.Center)
+
+          .onClick(() => {
+            this.SelectItem = Item
+          })
+        })
+      }.padding({ top: 45 })
 
       .height("100%")
       .backgroundColor(Color.Orange)
@@ -21,7 +32,7 @@ struct SideBarContainerDemo {
 
       //第二个组件是内容区
       Column() {
-        Text("主内容")
+        Text("主内容" + this.SelectItem)
           .width("100%")
           .height("100%")
           .fontSize(30)

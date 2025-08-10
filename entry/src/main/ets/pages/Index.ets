@@ -78,6 +78,9 @@ struct Index {
           router.pushUrl({ url: "pages/SideBarContainerDemo" })
         }).ButtonStyle()
 
+        Button("Tabs导航栏").onClick(() => {
+          router.pushUrl({ url: "pages/TabsDemo" })
+        }).ButtonStyle()
       }
     }
     .height('100%')
