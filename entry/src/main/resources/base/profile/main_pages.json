@@ -15,6 +15,7 @@
     "pages/HttpRequestListDemo",
     "pages/HttpRequestList2Demo",
     "pages/Region",
-    "pages/Login"
+    "pages/Login",
+    "pages/SideBarContainerDemo"
   ]
 }

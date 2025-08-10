@@ -69,10 +69,15 @@ struct Index {
         Button("封装Http请求").onClick(() => {
           router.pushUrl({ url: "pages/HttpRequestList2Demo" })
         }).ButtonStyle()
-        
+
         Button("Http模拟登录注册").onClick(() => {
           router.pushUrl({ url: "pages/Login" })
         }).ButtonStyle()
+
+        Button("侧边栏").onClick(() => {
+          router.pushUrl({ url: "pages/SideBarContainerDemo" })
+        }).ButtonStyle()
+
       }
     }
     .height('100%')
