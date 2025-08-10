@@ -12,6 +12,9 @@
     "pages/TrackDemo",
     "pages/ProgressDemo",
     "pages/HttpRequestDemo",
-    "pages/HttpRequestListDemo"
+    "pages/HttpRequestListDemo",
+    "pages/HttpRequestList2Demo",
+    "pages/Region",
+    "pages/Login"
   ]
 }

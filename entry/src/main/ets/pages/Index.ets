@@ -2,7 +2,7 @@ import { font, router } from "@kit.ArkUI";
 
 @Extend(Button)
 function ButtonStyle() {
-  .width(200)
+  .width(220)
   .height(40)
   .fontSize(20)
   .backgroundColor(Color.Green)
@@ -64,6 +64,14 @@ struct Index {
 
         Button("Http请求展示List").onClick(() => {
           router.pushUrl({ url: "pages/HttpRequestListDemo" })
+        }).ButtonStyle()
+
+        Button("封装Http请求").onClick(() => {
+          router.pushUrl({ url: "pages/HttpRequestList2Demo" })
+        }).ButtonStyle()
+        
+        Button("Http模拟登录注册").onClick(() => {
+          router.pushUrl({ url: "pages/Login" })
         }).ButtonStyle()
       }
     }
