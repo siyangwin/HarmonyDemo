@@ -66,6 +66,10 @@ struct Index {
           router.pushUrl({ url: "pages/LoginDemo" })
         }).ButtonStyle()
 
+        Button("钩子-触发事件").onClick(() => {
+          router.pushUrl({ url: "pages/hookDemo" })
+        }).ButtonStyle()
+
         Button("Style-公共").onClick(() => {
           router.pushUrl({ url: "pages/StylesPage" })
         }).ButtonStyle()

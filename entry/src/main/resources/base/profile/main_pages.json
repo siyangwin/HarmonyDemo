@@ -8,6 +8,7 @@
     "pages/RelativeContainerDemo",
     "pages/LoginDemo",
     "pages/RegionDemo",
+    "pages/hookDemo",
     "pages/StylesPage",
     "pages/SetStyleDemo",
     "pages/ListDemo",
