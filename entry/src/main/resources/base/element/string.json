@@ -10,7 +10,27 @@
     },
     {
       "name": "EntryAbility_label",
-      "value": "Style"
+      "value": "HarmonyDemo"
+    },
+    {
+      "name": "usernameCanNoEmpty",
+      "value": "请输入用户名"
+    },
+    {
+      "name": "passwordCanNoEmpty",
+      "value": "请输入密码"
+    },
+    {
+      "name": "passwordCanNoSame",
+      "value": "两次输入密码不一致"
+    },
+    {
+      "name": "LoginSuccess",
+      "value": "登录成功"
+    },
+    {
+      "name": "RegionSuccess",
+      "value": "注册成功"
     }
   ]
 }

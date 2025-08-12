@@ -1,11 +1,11 @@
-import loginView from '../components/LoginView';
+import LoginViewHttp from '../components/LoginViewHttp';
 
 @Entry
 @Component
 struct Region {
   build() {
     Column() {
-      loginView({ isLogin: false, Logo: false })
+      LoginViewHttp({ isLogin: false, Logo: false })
     }
   }
 }

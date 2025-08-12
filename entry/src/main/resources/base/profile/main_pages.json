@@ -6,6 +6,8 @@
     "pages/ButtonDemo",
     "pages/TextInputDemo",
     "pages/RelativeContainerDemo",
+    "pages/LoginDemo",
+    "pages/RegionDemo",
     "pages/StylesPage",
     "pages/SetStyleDemo",
     "pages/ListDemo",

@@ -3,7 +3,7 @@ import { Toast } from '../utils/toast'
 import { login, register } from '../api/login/index'
 
 @Component
-struct LoginView {
+struct LoginViewHttp {
   @State UserName: string = "";
   @State PassWord: string = "";
   @State PassWordTwo: string = "";
@@ -13,7 +13,7 @@ struct LoginView {
   //接受父组件传过来的值，判断是注册页面，还是登录页面
   @Prop isLogin: boolean = true
   @Prop Logo: boolean = true
-  @State message: string = this.isLogin ? "欢迎登录[Demo]" : "欢迎注册[Demo]"
+  @State message: string = this.isLogin ? "欢迎登录[Http]" : "欢迎注册[Http]"
   //定义方法
   private UserNameOnChange = (value: string) => {
     //Toast(this.promptAction, value)
@@ -155,7 +155,7 @@ struct LoginView {
             .onClick(() => {
               console.log("注册");
               //跳转页面
-              router.pushUrl({ url: "pages/RegionDemo" })
+              router.pushUrl({ url: "pages/Region" })
             })
         }
         .width("100%")
@@ -173,4 +173,4 @@ struct LoginView {
   }
 }
 
-export default LoginView
+export default LoginViewHttp

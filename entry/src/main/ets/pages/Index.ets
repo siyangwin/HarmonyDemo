@@ -8,15 +8,39 @@ function ButtonStyle() {
   .backgroundColor(Color.Green)
 }
 
+//接收参数列表
+interface Params {
+  username: string
+}
 
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World';
+  //@State message: string = 'Hello World';
+  //接受传入的参数
+  private params = router.getParams() as Params
+  //获取传入的数据
+  private message = this.params.username;
 
   build() {
     Scroll() {
       Column({ space: 20 }) {
+        Text() {
+          Span("您好！").fontColor(Color.Blue)
+          Span(this.message).fontColor(Color.Green)
+        }
+        .id('HelloWorld')
+        .fontSize($r('app.float.page_text_font_size'))
+        .fontWeight(FontWeight.Bold)
+        .alignRules({
+          center: { anchor: '__container__', align: VerticalAlign.Center },
+          middle: { anchor: '__container__', align: HorizontalAlign.Center }
+        })
+        .onClick(() => {
+          this.message = 'Welcome';
+        })
+
+
         Button("TextSpan-文本显示").onClick(() => {
           router.pushUrl({ url: "pages/TextSpanDemo" })
         }).ButtonStyle()
@@ -35,6 +59,10 @@ struct Index {
 
         Button("相对布局RelativeContainer").onClick(() => {
           router.pushUrl({ url: "pages/RelativeContainerDemo" })
+        }).ButtonStyle()
+
+        Button("模拟登录注册").onClick(() => {
+          router.pushUrl({ url: "pages/LoginDemo" })
         }).ButtonStyle()
 
         Button("Style-公共").onClick(() => {

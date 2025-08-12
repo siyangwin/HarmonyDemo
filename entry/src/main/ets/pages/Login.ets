@@ -1,11 +1,11 @@
-import loginView from '../components/LoginView';
+import LoginViewHttp from '../components/LoginViewHttp';
 
 @Entry
 @Component
 struct Login {
   build() {
     Column() {
-      loginView({ isLogin: true, Logo: false })
+      LoginViewHttp({ isLogin: true, Logo: false })
     }
   }
 }
