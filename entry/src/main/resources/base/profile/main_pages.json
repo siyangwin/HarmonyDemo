@@ -4,6 +4,8 @@
     "pages/TextSpanDemo",
     "pages/ImageDemo",
     "pages/ButtonDemo",
+    "pages/TextInputDemo",
+    "pages/RelativeContainerDemo",
     "pages/StylesPage",
     "pages/SetStyleDemo",
     "pages/ListDemo",

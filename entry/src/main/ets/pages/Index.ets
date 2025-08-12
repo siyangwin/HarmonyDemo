@@ -26,7 +26,15 @@ struct Index {
         }).ButtonStyle()
 
         Button("Button").onClick(() => {
-          router.pushUrl({ url: " pages/ButtonDemo" })
+          router.pushUrl({ url: "pages/ButtonDemo" })
+        }).ButtonStyle()
+
+        Button("TextInput").onClick(() => {
+          router.pushUrl({ url: "pages/TextInputDemo" })
+        }).ButtonStyle()
+
+        Button("相对布局RelativeContainer").onClick(() => {
+          router.pushUrl({ url: "pages/RelativeContainerDemo" })
         }).ButtonStyle()
 
         Button("Style-公共").onClick(() => {
