@@ -17,6 +17,18 @@ struct Index {
   build() {
     Scroll() {
       Column({ space: 20 }) {
+        Button("TextSpan-文本显示").onClick(() => {
+          router.pushUrl({ url: "pages/TextSpanDemo" })
+        }).ButtonStyle()
+
+        Button("Images-图片显示").onClick(() => {
+          router.pushUrl({ url: "pages/ImageDemo" })
+        }).ButtonStyle()
+
+        Button("Button").onClick(() => {
+          router.pushUrl({ url: " pages/ButtonDemo" })
+        }).ButtonStyle()
+
         Button("Style-公共").onClick(() => {
           router.pushUrl({ url: "pages/StylesPage" })
         }).ButtonStyle()
@@ -93,7 +105,7 @@ struct Index {
         Button("WebView").onClick(() => {
           router.pushUrl({ url: "pages/WebViewDemo" })
         }).ButtonStyle()
-        
+
       }
     }
     .height('100%')
