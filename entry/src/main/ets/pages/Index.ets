@@ -8,19 +8,19 @@ function ButtonStyle() {
   .backgroundColor(Color.Green)
 }
 
-//接收参数列表
+//接收参数列表  加？ 避免未传值导致错误
 interface Params {
-  username: string
+  username?: string
 }
 
 @Entry
 @Component
 struct Index {
   //@State message: string = 'Hello World';
-  //接受传入的参数
-  private params = router.getParams() as Params
-  //获取传入的数据
-  private message = this.params.username;
+  // 安全接收参数
+  private params: Params = (router.getParams() as Params) || {};
+  // 安全获取用户名，确保有默认值
+  private message = this.params.username || "";
 
   build() {
     Scroll() {
@@ -30,7 +30,8 @@ struct Index {
           Span(this.message).fontColor(Color.Green)
         }
         .id('HelloWorld')
-        .fontSize($r('app.float.page_text_font_size'))
+        //.fontSize($r('app.float.page_text_font_size'))
+        .fontSize(20)
         .fontWeight(FontWeight.Bold)
         .alignRules({
           center: { anchor: '__container__', align: VerticalAlign.Center },
