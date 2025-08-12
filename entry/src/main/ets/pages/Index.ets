@@ -70,6 +70,18 @@ struct Index {
           router.pushUrl({ url: "pages/hookDemo" })
         }).ButtonStyle()
 
+        Button("弹性布局-Flex").onClick(() => {
+          router.pushUrl({ url: "pages/FlexDemo" })
+        }).ButtonStyle()
+
+        Button("Grid网格").onClick(() => {
+          router.pushUrl({ url: "pages/GridDemo" })
+        }).ButtonStyle()
+
+        Button("切换按钮-Toggle").onClick(() => {
+          router.pushUrl({ url: "pages/ToggleDemo" })
+        }).ButtonStyle()
+
         Button("Style-公共").onClick(() => {
           router.pushUrl({ url: "pages/StylesPage" })
         }).ButtonStyle()
