@@ -160,8 +160,16 @@ struct Index {
         }).ButtonStyle()
 
 
-        Button("定时器-Timer").onClick(() => {
+        Button("Demo1-开屏广告").onClick(() => {
           router.pushUrl({ url: "pages/TimerDemo" })
+        }).ButtonStyle()
+
+        Button("Demo2-个人中心").onClick(() => {
+          router.pushUrl({ url: "pages/QRCodeProjectDemo" })
+        }).ButtonStyle()
+
+        Button("Demo3-健康监测").onClick(() => {
+          router.pushUrl({ url: "pages/HealthyDemo" })
         }).ButtonStyle()
 
       }

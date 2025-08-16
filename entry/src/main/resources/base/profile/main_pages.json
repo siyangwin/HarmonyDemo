@@ -33,6 +33,10 @@
     "pages/QrCodeDemo",
     "pages/WebViewDemo",
     "pages/TimerDemo",
-    "pages/TimerJumpPageDemo"
+    "pages/TimerJumpPageDemo",
+    "pages/QRCodeProjectDemo",
+    "pages/QRCodeUserInfoDemo",
+    "pages/QRCodeInfoDemo",
+    "pages/HealthyDemo"
   ]
 }
