@@ -31,6 +31,8 @@
     "pages/TabsDemo",
     "pages/SwiperDemo",
     "pages/QrCodeDemo",
-    "pages/WebViewDemo"
+    "pages/WebViewDemo",
+    "pages/TimerDemo",
+    "pages/TimerJumpPageDemo"
   ]
 }

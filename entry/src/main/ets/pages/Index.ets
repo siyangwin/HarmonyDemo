@@ -159,6 +159,11 @@ struct Index {
           router.pushUrl({ url: "pages/WebViewDemo" })
         }).ButtonStyle()
 
+
+        Button("定时器-Timer").onClick(() => {
+          router.pushUrl({ url: "pages/TimerDemo" })
+        }).ButtonStyle()
+
       }
     }
     .height('100%')

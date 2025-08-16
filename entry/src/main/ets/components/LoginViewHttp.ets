@@ -17,7 +17,10 @@ struct LoginViewHttp {
   @State message: string = this.isLogin ? "欢迎登录[Http]" : "欢迎注册[Http]"
   // 提交HTTP请求
   @State Url: string = "https://api.hejian.cyou/api/list"
-  // @State LoginParamsReq: LoginParams = {};
+  @State LoginParamsReq: LoginParams = {
+    username: "", // 提供空字符串而非不写
+    password: ""
+  };
   //定义方法
   private UserNameOnChange = (value: string) => {
     //Toast(this.promptAction, value)
@@ -29,7 +32,7 @@ struct LoginViewHttp {
     })
   }
   //定义方法
-  private GoMain = () => {
+  private GoMain = async () => {
     //检测内容是都有输入值
     if (this.UserName.length == 0) {
       Toast(this.promptAction, 'app.string.usernameCanNoEmpty');
@@ -100,13 +103,20 @@ struct LoginViewHttp {
       //跳转页面-不会销毁，会存储在页面栈中
       //router.pushUrl({ url: "pages/Login" })
     } else {
+      this.LoginParamsReq.username = this.UserName
+      this.LoginParamsReq.password = this.PassWord
+      console.log("登录1" + JSON.stringify(this.LoginParamsReq));
+
+      const res = await login(this.LoginParamsReq)
+
+      //console.log("登录" + JSON.stringify(res));
       Toast(this.promptAction, 'app.string.LoginSuccess');
-      // this.promptAction.showToast({
-      //   //Toast显示的内容
-      //   message: "登录成功",
-      //   //Toast显示的时长
-      //   duration: 2000
-      // })
+      this.promptAction.showToast({
+        //Toast显示的内容
+        message: "登录成功",
+        //Toast显示的时长
+        duration: 2000
+      })
       console.log("登录");
 
       //const xx = await login()
