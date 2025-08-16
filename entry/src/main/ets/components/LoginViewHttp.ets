@@ -1,6 +1,7 @@
 import { PromptAction, router } from "@kit.ArkUI";
 import { Toast } from '../utils/toast'
 import { login, register } from '../api/login/index'
+import { LoginParams } from "../api/login/indexModel"
 
 @Component
 struct LoginViewHttp {
@@ -14,6 +15,9 @@ struct LoginViewHttp {
   @Prop isLogin: boolean = true
   @Prop Logo: boolean = true
   @State message: string = this.isLogin ? "欢迎登录[Http]" : "欢迎注册[Http]"
+  // 提交HTTP请求
+  @State Url: string = "https://api.hejian.cyou/api/list"
+  // @State LoginParamsReq: LoginParams = {};
   //定义方法
   private UserNameOnChange = (value: string) => {
     //Toast(this.promptAction, value)

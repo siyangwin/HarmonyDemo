@@ -1,6 +1,5 @@
 import { PromptAction, router } from "@kit.ArkUI";
 import { Toast } from '../utils/toast'
-import { login, register } from '../api/login/index'
 
 @Component
 struct LoginView {
